@@ -1,8 +1,7 @@
 applications:
 - name: tracker-registration
   path: ./applications/registration-server/build/libs/registration-server.jar
-  routes:
-  - route: registration-pal-mrammal.apps.chicken.pal.pivotal.io
+  host: registration-pal-mr
   memory: 1G
   instances: 1
   services:

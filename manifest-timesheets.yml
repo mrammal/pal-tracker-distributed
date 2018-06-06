@@ -1,11 +1,10 @@
 applications:
 - name: tracker-timesheets
   path: ./applications/timesheets-server/build/libs/timesheets-server.jar
-  routes:
-  - route: timesheets-pal-mrammal.apps.chicken.pal.pivotal.io
+  host: timesheets-pal-mr
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-mrammal.apps.chicken.pal.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-mr.apps.chicken.pal.pivotal.io
   services:
   - tracker-timesheets-database
